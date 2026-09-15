@@ -1,0 +1,4 @@
+[submodule "site-specific"]
+	path = site-specific
+	url = /Users/johnlee/code/CON/psychoinformatics-site-specific
+	datalad-url = /Users/johnlee/code/CON/psychoinformatics-site-specific
