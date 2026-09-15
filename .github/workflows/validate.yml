@@ -34,7 +34,12 @@ jobs:
           frozen: true
       - name: Validate and build
         run: |
+          git status --short
           pixi run build && pixi run orinoco-lite verify-site build/site
+          git status --short
+          git diff --stat
+          git submodule foreach 'git status --short; git diff --stat'
+          pixi run orinoco-lite publication prepare --site build/site
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         if: matrix.runner == 'ubuntu-24.04'
         with:
