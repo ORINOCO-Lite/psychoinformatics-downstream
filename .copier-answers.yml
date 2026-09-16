@@ -1,4 +1,4 @@
-_commit: 3bfa867a36dc280e83e571e72d868e1dc4e02a3a
+_commit: 7f6d32f1cca85e419664ac8a06f31b78ad67d4b0
 _src_path: https://github.com/ORINOCO-Lite/orinoco-lite-template.git
 project_slug: psychoinformatics-comparison
 project_name: Psychoinformatics comparison
@@ -7,4 +7,4 @@ site_base_url: https://orinoco-lite.github.io/psychoinformatics-downstream/
 pr_previews: none
 include_site_specific: false
 package_repository: https://github.com/ORINOCO-Lite/orinoco-lite-dev.git
-package_revision: 836fed5fc20d882248702a76e97b7f3e9f181453
+package_revision: 0aeb779418285d2ed39c6a8e97968ba340a2e908
