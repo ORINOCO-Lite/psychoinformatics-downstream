@@ -1,8 +1,0 @@
-_commit: 5b393d3468d674598a02321560fc378ce681c248
-_src_path: https://github.com/ORINOCO-Lite/orinoco-lite-template.git
-project_slug: psychoinformatics-comparison
-project_name: Psychoinformatics comparison
-site_description: Retained-capture comparison of the Psychoinformatics website.
-site_base_url: https://orinoco-lite.github.io/psychoinformatics-downstream/
-pr_previews: none
-include_site_specific: false
