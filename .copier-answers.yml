@@ -7,4 +7,4 @@ site_base_url: https://orinoco-lite.github.io/psychoinformatics-downstream/
 pr_previews: none
 include_site_specific: false
 package_repository: https://github.com/ORINOCO-Lite/orinoco-lite-dev.git
-package_revision: cd787d70677c993f4c79079c6c4e5e8e728e1d16
+package_revision: e967dd36b72f882720220997073f532aa4994f09
