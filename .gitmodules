@@ -2,3 +2,6 @@
 	path = site-specific
 	url = ./site-specific
 	datalad-id = 632eb677-d4a8-4840-9625-82a463d14e51
+[submodule "sourcedata/www-from-model"]
+	path = sourcedata/www-from-model
+	url = https://github.com/ORINOCO-Lite/www-from-model.git
