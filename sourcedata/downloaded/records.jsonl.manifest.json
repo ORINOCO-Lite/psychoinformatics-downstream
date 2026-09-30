@@ -1,6 +1,6 @@
 {
-  "capture_started_at": "2026-09-29T20:55:49.601892+00:00",
-  "captured_at": "2026-09-29T20:56:23.209817+00:00",
+  "capture_started_at": "2026-09-30T17:26:40.690409+00:00",
+  "captured_at": "2026-09-30T17:27:15.486923+00:00",
   "completeness": {
     "atomic_snapshot": false,
     "limitations": "Reported pagination totals, record count, and unique PIDs were checked. The service does not provide an atomic snapshot; concurrent edits that preserve these checks can remain undetected.",
