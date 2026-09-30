@@ -5,5 +5,5 @@ project_name: Orinoco Lite Site
 site_description: A site built with Orinoco Lite.
 site_base_url: https://example.invalid/orinoco-site/
 pr_previews: none
-include_site_specific: false
+include_site_specific: true
 pages_history_limit: 3
