@@ -1,0 +1,68 @@
+# Site settings and permitted operations. See docs/configuration.md.
+[tool.orinoco.site]
+record_prefix = "xyzrins:"
+
+[tool.orinoco.site.identity]
+title = "Psychoinformatics"
+description = "Research in this lab focuses on the interface of computer and information sciences, neuroscience, and psychology."
+base_url = "https://www-draft.psychoinformatics.de/"
+
+[[tool.orinoco.site.navigation]]
+name = "People"
+page_ref = "persons"
+weight = 10
+icon = "account-group"
+
+[[tool.orinoco.site.navigation]]
+name = "Objectives"
+page_ref = "objectives"
+weight = 20
+icon = "bullseye-arrow"
+
+[[tool.orinoco.site.navigation]]
+name = "Projects"
+page_ref = "projects"
+weight = 25
+icon = "human-dolly"
+
+[[tool.orinoco.site.navigation]]
+name = "Publications"
+page_ref = "publications"
+weight = 30
+icon = "cast-education"
+
+[[tool.orinoco.site.navigation]]
+name = "Outputs"
+identifier = "outputs"
+weight = 32
+icon = "export"
+
+[[tool.orinoco.site.navigation]]
+name = "Datasets"
+page_ref = "datasets"
+parent = "outputs"
+weight = 34
+icon = "mdi-database-outline"
+
+[[tool.orinoco.site.navigation]]
+name = "Instruments"
+page_ref = "instruments"
+parent = "outputs"
+weight = 36
+icon = "mdi-microscope"
+
+[[tool.orinoco.site.navigation]]
+name = "Topics"
+page_ref = "topics"
+weight = 38
+icon = "pound-box-outline"
+
+[[tool.orinoco.site.navigation]]
+name = "Collaboration hub"
+url = "https://hub.psychoinformatics.de"
+weight = 40
+icon = "forgejo-aneksajo"
+[tool.orinoco.site.appearance]
+color_scheme = "fire"
+default_appearance = "light"
+header_layout = "hybrid"
