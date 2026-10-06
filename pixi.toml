@@ -11,7 +11,7 @@ git = "*"
 hugo = "<0.156"
 
 [pypi-dependencies]
-orinoco-lite = { git = "https://github.com/ORINOCO-Lite/orinoco-lite-dev.git", rev = "3d9b28c8aa5b0841e9a5394080c8952ead6696ce" }
+orinoco-lite = {git = "https://github.com/ORINOCO-Lite/orinoco-lite-dev.git", rev = "f6af6801e4122e986aa6d63f2836b8eda6bfed42"}
 
 [tasks]
 build = "orinoco-lite build --destination build/site --base-url /"
