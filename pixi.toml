@@ -1,0 +1,20 @@
+[workspace]
+requires-pixi = ">=0.76"
+name = "psychoinformatics-downstream"
+channels = ["conda-forge"]
+platforms = [{ platform = "osx-arm64", macos = "14.0" }, { platform = "linux-64", glibc = "2.34" }]
+
+[dependencies]
+python = "*"
+git = "*"
+# The selected Congo theme uses .Site.Author, removed in Hugo 0.156.
+hugo = "<0.156"
+
+[pypi-dependencies]
+orinoco-lite = { git = "https://github.com/ORINOCO-Lite/orinoco-lite-dev.git", rev = "3d9b28c8aa5b0841e9a5394080c8952ead6696ce" }
+
+[tasks]
+build = "orinoco-lite build --destination build/site --base-url /"
+build-pages = "orinoco-lite build --destination build/site --publication-bundle build/pages-publication.bundle"
+serve = "orinoco-lite serve --directory build/site --port 8765"
+dev-enable = "orinoco-lite dev enable"

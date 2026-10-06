@@ -1,0 +1,81 @@
+{% set default_navigation = [
+  {
+    "name": "People",
+    "page_ref": "/persons/",
+    "icon": "account-group",
+    "weight": 10
+  },
+  {
+    "name": "Projects",
+    "page_ref": "/projects/",
+    "icon": "human-dolly",
+    "weight": 25
+  },
+  {
+    "name": "Publications",
+    "page_ref": "/publications/",
+    "icon": "cast-education",
+    "weight": 30
+  },
+  {
+    "name": "Outputs",
+    "identifier": "outputs",
+    "icon": "export",
+    "weight": 32
+  },
+  {
+    "name": "Datasets",
+    "page_ref": "/datasets/",
+    "parent": "outputs",
+    "icon": "mdi-database-outline",
+    "weight": 34
+  },
+  {
+    "name": "Instruments",
+    "page_ref": "/instruments/",
+    "parent": "outputs",
+    "icon": "mdi-microscope",
+    "weight": 36
+  },
+  {
+    "name": "Explore",
+    "page_ref": "/explore/",
+    "icon": "circle-info",
+    "weight": 40
+  }
+] %}
+
+{% if not site.footer_navigation | default([]) %}
+footer = []
+{% endif %}
+
+{% for item in site.navigation | default(default_navigation) -%}
+[[main]]
+  name = {{ item.name | json_string }}
+  title = {{ item.name | json_string }}
+{% if item.page_ref is defined %}  pageRef = {{ item.page_ref | json_string }}
+{% endif %}{% if item.url is defined %}  url = {{ item.url | json_string }}
+{% endif %}{% if item.identifier is defined %}  identifier = {{ item.identifier | json_string }}
+{% endif %}{% if item.parent is defined %}  parent = {{ item.parent | json_string }}
+{% endif %}
+  weight = {{ item.weight | default(loop.index * 10) }}
+{% if item.icon is defined or item.target is defined %}  [main.params]
+{% if item.icon is defined %}    icon = {{ item.icon | json_string }}
+    showName = false
+{% endif %}{% if item.target is defined %}    target = {{ item.target | json_string }}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+[[main]]
+  identifier = "search"
+  weight = 99
+  [main.params]
+    action = "search"
+
+{% for item in site.footer_navigation | default([]) %}
+[[footer]]
+  name = {{ item.name | json_string }}
+  title = {{ item.name | json_string }}
+  pageRef = {{ item.page_ref | json_string }}
+{% endfor %}

@@ -1,0 +1,14 @@
+.DS_Store
+.pixi/
+pixi.lock
+.orinoco-lite/state/
+build/
+node_modules/
+test-results/
+playwright-report/
+__pycache__/
+*.py[cod]
+*.rej
+
+# Tracked Orinoco support files live under .orinoco-lite/. Generated projection,
+# downloads, and caches remain ignored.

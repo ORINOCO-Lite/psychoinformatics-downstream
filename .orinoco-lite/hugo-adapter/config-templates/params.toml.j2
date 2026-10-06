@@ -1,0 +1,14 @@
+{% set appearance = site.appearance | default({}) %}
+colorScheme = {{ appearance.color_scheme | default('fire') | json_string }}
+defaultAppearance = {{ appearance.default_appearance | default('light') | json_string }}
+
+[header]
+  layout = {{ appearance.header_layout | default('hybrid') | json_string }}
+  logo = ""
+  logoDark = ""
+
+[footer]
+  showCopyright = false
+
+[homepage]
+  layout = "page"
