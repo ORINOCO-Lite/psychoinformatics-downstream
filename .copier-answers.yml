@@ -1,9 +1,10 @@
 _commit: 865528deaf3035aa48ead44f8049960ce79b90b7
 _src_path: https://github.com/ORINOCO-Lite/orinoco-lite-template.git
-project_slug: orinoco-site
-project_name: Orinoco Lite Site
-site_description: A site built with Orinoco Lite.
-site_base_url: https://example.invalid/orinoco-site/
+project_slug: psychoinformatics-downstream
+project_name: Psychoinformatics
+site_description: Research in this lab focuses on the interface of computer and information
+  sciences, neuroscience, and psychology.
+site_base_url: https://www-draft.psychoinformatics.de/
 pr_previews: none
 include_site_specific: false
 pages_history_limit: 3
